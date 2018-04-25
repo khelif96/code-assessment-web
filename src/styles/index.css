@@ -1,0 +1,42 @@
+/*  Set our basic styles*/
+body, html{
+  background: #f4f5f7;
+  color: #2A2A2A;
+  font-family: "Arial Regular", "Helvetica Neue", Helvetica, sans-serif;
+  height: 100%;
+}
+
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	padding: 0;
+}
+
+button:focus {
+	outline: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 769px) {
+	h2 {
+		font-size: 51px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 38px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h2 {
+		font-size: 28px;
+	}
+}

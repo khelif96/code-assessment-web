@@ -1,0 +1,41 @@
+:local(.ProductTitle ){
+    font-size: 38px;
+    color : "red";
+}
+
+:local(.ProductPrice) {
+    font-size: 21px;
+}
+
+:local(.ProductInv) {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #939393;
+}
+
+:local(.ProductTopRow) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    :local(.ProductTitle) {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :local(.ProductTitle) {
+        font-size: 21px;
+    }
+
+    :local(.ProductPrice) {
+        font-size: 16px;
+    }
+
+    :local(.ProductInv) {
+        font-size: 12px;
+    }
+}

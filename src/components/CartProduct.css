@@ -1,0 +1,111 @@
+:local(.ProductItem) {
+    display: flex;
+    width: 100%;
+}
+
+:local(.ProductImg) {
+    width: 107px;
+    height: 78px;
+    background-size: cover;
+    background-position: center;
+}
+
+:local(.ProductInfo) {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 1rem;
+}
+
+:local(.ProductTitle) {
+    font-size: 16px;
+    margin-bottom: .25rem;
+}
+
+:local(.ProductPrice) {
+    font-size: 14px;
+}
+
+:local(.ProductRemoveBtn) {
+    display: inline-flex;
+    font-size: 14px;
+    color: #CC1D39;
+    margin: auto auto 0 0;
+}
+
+:local(.ProductQtyCtrls) {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+:local(.ProductQtyCtrls > * ){
+    width: 33.3%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+:local(.ProductQtyCtrls > * > p ){
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:local(.ProductQtyCtrls > *:disabled) {
+    background-color: #F9F9F9;
+    color: #DEDEDE;
+    cursor: not-allowed;
+}
+:local(.ProductQtyCtrls > *:disabled:hover){
+  background-color: #F9F9F9;
+  color: #DEDEDE;
+  cursor: not-allowed;
+}
+
+:local(.ProductQty) {
+    font-size: 14px;
+    box-sizing: border-box;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+
+:local(.ProductQtyMinus) {
+    font-size: 25px;
+    background-color: #F5F5F5;
+    color: #8E939C;
+}
+:local(.ProductQtyPlus){
+  font-size: 25px;
+  background-color: #F5F5F5;
+  color: #8E939C;
+}
+:local(.ProductQtyMinus:hover) {
+    background-color: #5E97D1;
+    color: #fff;
+    transition: all 300ms ease;
+}
+:local(.ProductQtyPlus:hover){
+  background-color: #5E97D1;
+  color: #fff;
+  transition: all 300ms ease;
+}
+:local(.ProductQtyMinus) {
+    border-radius: 32px 0 0 32px;
+}
+
+:local(.ProductQtyPlus ){
+    border-radius: 0 32px 32px 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    /* Product Styles */
+    :local(.ProductQtyCtrls > *) {
+        height: 40px;
+        padding: 0;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Cart.css'
-import { ProductImages } from '../containers/App'
+import styles from './CartProduct.css'
+import { ProductImages } from '../img/ProductImages'
 
 const CartProduct = ({product}) => (
   <div key={product.id}>

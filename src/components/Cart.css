@@ -1,0 +1,171 @@
+:local(.CartContainer) {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+:local(.Cart) {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    min-height: 678px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 14px;
+}
+
+:local(.CartInner) {
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+:local(.CartTitle) {
+    font-size: 38px;
+}
+
+:local(.CartHR) {
+    margin: 1.5rem 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+:local(.CartIcon) {
+    width: 95px;
+    height: 75px;
+}
+
+:local(.CloseIcon) {
+    width: 30px;
+    height: 30px;
+}
+:local( .CloseIcon div){
+  width:30px;
+  height : 30px;
+}
+
+:local(.CartItems) {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:local(.EmptyCartMsg) {
+    font-size: 21px;
+    text-align: center;
+    color: #919191;
+    margin-bottom: .25rem;
+
+}
+
+
+:local(.EmptyCartMsg:last-child) {
+    margin-top: 0;
+}
+
+:local(.CartAmounts) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+:local(.CartAmounts p) {
+    margin: 0;
+    display: inline;
+    font-size: 14px;
+}
+
+:local(.CartTotalLabel) {
+    color: #9D9D9D;
+}
+
+:local(.CheckoutBtn) {
+    width: 100%;
+    font-size: 21px;
+    margin-top: auto;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+    border-radius: 0 0 14px 14px;
+    color: #fff;
+    background-color: #5E97D1;
+    transition: background-color 300ms ease;
+}
+
+:local(.CheckoutBtn:hover ){
+    background-color: #407FC0;
+}
+
+:local(.CartTopRow) {
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+:local(.CartBtmRow) {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    min-height: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1199px) {
+    :local(.Cart) {
+        width: 75%;
+    }
+
+    :local(.CartBtmRow) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :local(.CartContainer) {
+        top: 0;
+    }
+
+    :local(.Cart) {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    :local(.CartInner ){
+        padding: 1rem;
+    }
+
+    :local(.CartTitle) {
+        font-size: 28px;
+    }
+
+    :local(.CartIcon) {
+        width: 72px;
+        height: 57px;
+    }
+
+    :local(.CloseIcon) {
+        width: 20px;
+        height: 20px;
+    }
+    :local( .CloseIcon div){
+      width : 20px;
+      height : 20px;
+    }
+    :local(.EmptyCartMsg) {
+        font-size: 16px;
+        margin-top: 1.5rem;
+    }
+
+    :local(.CheckoutBtn) {
+        font-size: 14px;
+        border-radius: 0;
+    }
+
+
+}

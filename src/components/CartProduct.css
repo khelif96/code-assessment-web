@@ -76,16 +76,18 @@
     background-color: #F5F5F5;
     color: #8E939C;
 }
-:local(.ProductQtyPlus){
-  font-size: 25px;
-  background-color: #F5F5F5;
-  color: #8E939C;
-}
 :local(.ProductQtyMinus:hover) {
     background-color: #5E97D1;
     color: #fff;
     transition: all 300ms ease;
 }
+
+:local(.ProductQtyPlus){
+  font-size: 25px;
+  background-color: #F5F5F5;
+  color: #8E939C;
+}
+
 :local(.ProductQtyPlus:hover){
   background-color: #5E97D1;
   color: #fff;

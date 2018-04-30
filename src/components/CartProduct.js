@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './CartProduct.css'
 import { ProductImages } from '../img/ProductImages'
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ProductImages } from '../containers/App'
 import CartIcon from '../components/Icons/CartIcon'
 import CloseIcon from '../components/Icons/CloseIcon'
 import styles from './Cart.css'
